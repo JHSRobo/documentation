@@ -26,7 +26,7 @@ you get an error about ssh keys, run the command the error message provides you 
 
 ### Method 1
 
-open a terminal window
+Open a terminal window
 
 run: `bottomside`
 

@@ -13,6 +13,6 @@ Open a terminal window (ctrl + alt + t)
 Run: ssh bottomside
 Run: cameras
 Shortcuts:
-*ctrl + / (in topside window): Enable keyboard_teleop
-*ctrl + c: Quit a program
-*f (in camera window): Toggle Fullscreen
+**ctrl + / (in topside window): Enable keyboard_teleop
+ctrl + c: Quit a program
+f (in camera window): Toggle Fullscreen

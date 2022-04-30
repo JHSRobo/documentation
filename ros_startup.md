@@ -1,8 +1,19 @@
 # Launch Topside:
 
-Open a terminal window (ctrl + alt + t)
+### Method 1
+
+Open a terminal window
 
 Run: `topside`
+
+### Method 2
+#### To be used if method 1 does not work
+
+Open a new terminal window
+Run the following commands:
+1. `cd Github/ROVMIND/ros_workspace`
+2. `source devel/setup.bash`
+3. `roslaunch launch_files topside.launch`
 
 # Launch Bottomside:
 

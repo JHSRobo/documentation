@@ -12,7 +12,7 @@ Run: roslaunch launch_files bottomside.launch
 Open a terminal window (ctrl + alt + t)
 Run: ssh bottomside
 Run: cameras
-Shortcuts:
+## Shortcuts:
 **ctrl + / (in topside window): Enable keyboard_teleop
 ctrl + c: Quit a program
 f (in camera window): Toggle Fullscreen**

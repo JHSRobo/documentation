@@ -32,19 +32,19 @@ run: `bottomside`
 
 ### Method 2
 
-Run: cd Github/ROVMIND/ros_workspace
+Run: `cd Github/ROVMIND/ros_workspace`
 
-Run: source devel/setup.bash
+Run: `source devel/setup.bash`
 
-Run: roslaunch launch_files bottomside.launch
+Run: `roslaunch launch_files bottomside.launch`
 
 # Enable Cameras:
 
-Open a terminal window (ctrl + alt + t)
+Open a terminal window
 
-Run: ssh bottomside
+Run: `ssh bottomside`
 
-Run: cameras
+Run: `cameras`
 
 ## Shortcuts:
 

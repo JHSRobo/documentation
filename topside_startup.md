@@ -15,4 +15,4 @@ Run: cameras
 Shortcuts:
 **ctrl + / (in topside window): Enable keyboard_teleop
 ctrl + c: Quit a program
-f (in camera window): Toggle Fullscreen
+f (in camera window): Toggle Fullscreen**

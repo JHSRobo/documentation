@@ -3,3 +3,7 @@ Open a terminal window (ctrl + alt + t)
 Run: cd Github/ROVMIND/ros_workspace
 Run: source devel/setup.bash
 Run: roslaunch launch_files topside.launch
+Shortcuts:
+ctrl + / (in topside window): Enable keyboard_teleop
+ctrl + c: Quit a program
+f (in camera window): Toggle Fullscreen

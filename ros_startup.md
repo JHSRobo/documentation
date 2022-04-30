@@ -12,39 +12,34 @@ Run: `topside`
 Open a new terminal window
 
 Run the following commands:
-1. `cd Github/ROVMIND/ros_workspace`
-2. `source devel/setup.bash`
-3. `roslaunch launch_files topside.launch`
+- `cd Github/ROVMIND/ros_workspace`
+- `source devel/setup.bash`
+- `roslaunch launch_files topside.launch`
 
 # Launch Bottomside:
 
-Open a terminal window
+- Open a terminal window
 
-Run: `ssh bottomside`
+- Run: `ssh bottomside`
 
 you get an error about ssh keys, run the command the error message provides you with, beginning with ssh-keygen. (This will be different depending on the system)
 
 ### Method 1
 
-Open a terminal window
-
-run: `bottomside`
+-run: `bottomside`
 
 ### Method 2
 
-Run: `cd Github/ROVMIND/ros_workspace`
-
-Run: `source devel/setup.bash`
-
-Run: `roslaunch launch_files bottomside.launch`
+Run the following commands:
+- `cd Github/ROVMIND/ros_workspace`
+- `source devel/setup.bash`
+- `roslaunch launch_files bottomside.launch`
 
 # Enable Cameras:
 
-Open a terminal window
-
-Run: `ssh bottomside`
-
-Run: `cameras`
+- Open a terminal window
+- Run: `ssh bottomside`
+- Run: `cameras`
 
 ## Shortcuts:
 

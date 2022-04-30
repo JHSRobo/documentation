@@ -38,7 +38,7 @@ Run: ssh bottomside
 
 Run: cameras
 
-# Shortcuts:
+## Shortcuts:
 
 **ctrl + / (in topside window): Enable keyboard_teleop
 

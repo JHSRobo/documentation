@@ -2,9 +2,9 @@
 
 ### Method 1
 
-Open a terminal window
+- Open a terminal window
 
-Run: `topside`
+- Run: `topside`
 
 ### Method 2
 **To be used if method 1 does not work**
@@ -29,6 +29,8 @@ you get an error about ssh keys, run the command the error message provides you 
 - run: `bottomside`
 
 ### Method 2
+
+**To be used if method 1 does not work**
 
 Run the following commands:
 - `cd Github/ROVMIND/ros_workspace`

@@ -22,7 +22,7 @@ Run the following commands:
 
 - Run: `ssh bottomside`
 
-you get an error about ssh keys, run the command the error message provides you with, beginning with ssh-keygen. (This will be different depending on the system)
+if you get an error about ssh keys, run the command the error message provides you with, beginning with ssh-keygen. (This will be different depending on the system)
 
 ### Method 1
 

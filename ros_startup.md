@@ -10,6 +10,7 @@ Run: `topside`
 #### To be used if method 1 does not work
 
 Open a new terminal window
+
 Run the following commands:
 1. `cd Github/ROVMIND/ros_workspace`
 2. `source devel/setup.bash`

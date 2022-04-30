@@ -18,7 +18,7 @@ Run the following commands:
 
 # Launch Bottomside:
 
-Open a terminal window (ctrl + alt + t)
+Open a terminal window
 
 Run: `ssh bottomside`
 

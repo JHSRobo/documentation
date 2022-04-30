@@ -7,7 +7,7 @@ Open a terminal window
 Run: `topside`
 
 ### Method 2
-#### To be used if method 1 does not work
+**To be used if method 1 does not work**
 
 Open a new terminal window
 

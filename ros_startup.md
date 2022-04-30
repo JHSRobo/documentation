@@ -1,10 +1,10 @@
-## Launch Topside:
+# Launch Topside:
 
 Open a terminal window (ctrl + alt + t)
 
 Run: `topside`
 
-## Launch Bottomside:
+# Launch Bottomside:
 
 Open a terminal window (ctrl + alt + t)
 
@@ -18,7 +18,7 @@ Run: source devel/setup.bash
 
 Run: roslaunch launch_files bottomside.launch
 
-## Enable Cameras:
+# Enable Cameras:
 
 Open a terminal window (ctrl + alt + t)
 
@@ -26,10 +26,10 @@ Run: ssh bottomside
 
 Run: cameras
 
-## Shortcuts:
+# Shortcuts:
 
 **ctrl + / (in topside window): Enable keyboard_teleop
 
 ctrl + c: Quit a program
 
-f (in camera window): Toggle Fullscreen**
+**f (in camera window): Toggle Fullscreen**

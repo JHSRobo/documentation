@@ -50,20 +50,18 @@
 
 ### Create a new release for the code you pushed the repository to.
 
-1. Navigate to the `Code` page in the repository and click the `Releases` link on the right side.
+1. Navigate to the `Code` page in the repository you edited and click the `Releases` link on the right side.
 
 2. Add a title and a tag of the format: `V#.#`
 
-#### Create new release for the ROVMIND repository
-
 - Name the new release the next number after the previous release.
 
-- Navigate to the `releasepage` repository
+#### Update the release page for the new release
 
-- Change the version in either `tcu_build` or `rov_build` for the repository where you pushed your code.
+- Navigate to the [`releasepage`](https://github.com/jhsrobo/releasepage) repository
+
+- Change the version of the repository in either [`tcu_build.sh`](https://github.com/JHSRobo/releasepage/blob/master/tcu_build.sh) or [`rov_build.sh`](https://github.com/JHSRobo/releasepage/blob/master/rov_build.sh) depending on whether you want the code to be on the TCU or the ROV to the new version you created.
 
 - **If this is the first time with this repository, you will need to create a new line. Copy an existing git clone and replace the URL with the URL of the new repository. Make sure to use correct version**
-
-- *choose between tcu_build or rov_build based on where the code is going to run.*
   
   

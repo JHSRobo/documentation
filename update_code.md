@@ -66,7 +66,7 @@
    
 # Updating the new code on the TCU / ROV
 
-1. Open a new terminal and navigate to ~/Github/releasepage
+1. Open a new terminal and navigate to `~/Github/releasepage`
 
 2. `git pull` the latest code after you updated the release page
 

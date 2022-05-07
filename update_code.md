@@ -2,7 +2,7 @@
 
 ### Creating a new package:
  
-1. `cd into Github/ROVMIND/ros_workspace/src`
+1. `cd ~Github/ROVMIND/ros_workspace/src`
  
 2. Create a package using `catkin_create_pkg <pkg name> <dependency> <dependency>`
  

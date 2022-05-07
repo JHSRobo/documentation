@@ -1,18 +1,14 @@
 # Committing to GitHub and Updating Release Page
 
-## First Time Setup:
-
-1. Write the code
-
 ### Creating a new package:
  
 1. `cd into Github/ROVMIND/ros_workspace/src`
  
 2. Create a package using `catkin_create_pkg <pkg name> <dependency> <dependency>`
  
-3. Move the code into the package
+3. Move the code you wrote into the package
 
-4. Make the package using `catkin_make` in ros_workspace
+4. Compile the package using `catkin_make` in ros_workspace
 
 5. Open up a browser and go to the Rovotics Github Page
 

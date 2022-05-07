@@ -63,5 +63,15 @@
 - Change the version of the repository in either [`tcu_build.sh`](https://github.com/JHSRobo/releasepage/blob/master/tcu_build.sh) or [`rov_build.sh`](https://github.com/JHSRobo/releasepage/blob/master/rov_build.sh) depending on whether you want the code to be on the TCU or the ROV to the new version you created.
 
 - **If this is the first time with this repository, you will need to create a new line. Copy an existing git clone and replace the URL with the URL of the new repository. Make sure to use correct version**
-  
-  
+   
+# Updating the new code on the TCU / ROV
+
+1. Open a new terminal and navigate to ~/Github/releasepage
+
+2. `git pull` the latest code after you updated the release page
+
+3. `bash rov_buld.sh` or `bash tcu_build.sh` depending on whether you are on the TCU or the ROV
+
+- Ensure that it completes successfully, if it doesn't you have to fix a bug. The test benches may take a while.
+
+4. You can then refer to the [roslaunch steps](https://github.com/JHSRobo/documentation/blob/main/ros_startup.md) to launch ros properly

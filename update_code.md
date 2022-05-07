@@ -3,46 +3,50 @@
 ## First Time Setup:
 
 1. Write the code
+
+### Creating a new package:
  
-2. `cd into Github/ROVMIND/ros_workspace/src`
+1. `cd into Github/ROVMIND/ros_workspace/src`
  
-3. Create a package using `catkin_create_pkg <pkg name> <dependency> <dependency>`
+2. Create a package using `catkin_create_pkg <pkg name> <dependency> <dependency>`
  
-4. Move the code into the package
+3. Move the code into the package
 
-5. Make the package using `catkin_make` in ros_workspace
+4. Make the package using `catkin_make` in ros_workspace
 
-6. Open up a browser and go to the Rovotics Github Page
+5. Open up a browser and go to the Rovotics Github Page
 
-7. Create a new repository, naming it with snake_case and creating a readme.
+6. Create a new repository, naming it with snake_case and creating a readme.
 
-8. Clone the new repository to your local machine
+7. Clone the new repository to your local machine
 
-9. Move the .git and readme files from the cloned repository to the package you created in Github/ROVMIND/ros_workspace/src
+8. Move the .git and readme files from the cloned repository to the package you created in Github/ROVMIND/ros_workspace/src
 
-10. The .git is a hidden file, so in order to see it you must use: `ls -a`.
+  - The .git is a hidden file, so in order to see it you must use: `ls -a`.
 
-11. Push the package you created in Github/ROVMIND/ros_workspace/src to the new Github Repository.
+9. Push the package you created in Github/ROVMIND/ros_workspace/src to the new Github Repository.
 
-12. `git commit -am “<message goes here>”`
+10. `git commit -am “<message goes here>”`
 
-13. `git push`
+11. `git push`
 
 - **If you are not already logged in on this machine, it will give you the commands to run in order to login to your Github.**
 
-14. Use a personal access token in place of your password
+12. Use a personal access token in place of your password
 
-15. Open up the GitHub website and navigate to the ROVMIND repository
+## Adding the repository to Launch Files
 
-16. `cd ros_workspace/src/launch_files/launch`
+1. Open up the GitHub website and navigate to the ROVMIND repository
 
-17. If this program will be running on topside, edit topside.launch
+2. `cd ros_workspace/src/launch_files/launch`
 
-18. If this program will be running on bottomside, edit bottomside.launch
+3. If this program will be running on topside, edit topside.launch
 
-19. Copy an existing node and replace the names with appropriate titles for your new code.
+4. If this program will be running on bottomside, edit bottomside.launch
 
-20. type= is the name of the file you want to launch
+5. Copy an existing node and replace the names with appropriate titles for your new code.
+
+- .type= is the name of the file you want to launch
 
 ## Updating Release Page:
 

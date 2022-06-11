@@ -48,44 +48,66 @@
 
     * Install desktop full version
 
-Make github folder
+8. Make github folder
 
-Enter folder
+   * Enter folder
 
-Git clone releasepage repo
+9. type the command: `git clone releasepage repo`
 
-Enter releasepage folder
+   * Enter releasepage folder
 
-Run tcu_build.sh
+   * Run tcu_build.sh
 
-Idk where his goes, but type:
+10. Idk where his goes, but type:
 
-Cd /etc/udev/rules.d
+   * `Cd /etc/udev/rules.d`
 
-Sudo touch joystick.rules
+   * `Sudo touch joystick.rules`
 
-Sudo nano joystick.rules
+   * `Sudo nano joystick.rules`
 
-Type in opened file: “KERNAL==“HyACMO” MODE==“06666””
+      * Type in opened file: `“KERNAL==“HyACMO” MODE==“06666””`
 
-Sudo nano /etc/hosts
+11. type: `sudo nano /etc/hosts`
 
-Insert
+   * Insert
 
-192.168.1.100 master
+      * `192.168.1.100 master`
 
-192.168.1.111 bottomside
+      * `192.168.1.111 bottomside`
 
-Cd ~
+12. type: `cd ~`
 
-Sudo nano .bashrc
+   * `sudo nano .bashrc`
 
-Export ROS_MASTER_URI=http://master:11311
+      * `Export ROS_MASTER_URI=http://master:11311`
 
-Export ROS_HOSTNAME=master
+      * `Export ROS_HOSTNAME=master`
 
-Export ROS_IP=192.168.1.100
+      * `Export ROS_IP=192.168.1.100`
 
-Type “sudo crontab -e”
+   * Type `sudo crontab -e`
 
-At the  bottom of the  document, type “@reboot bash /home/jhsrobo/Github/streamer/startup.sh
+      * At the  bottom of the  document, type `@reboot bash /home/jhsrobo/Github/streamer/startup.sh`
+
+## ROV:
+### Raspberry Pi 3B+ : Ubuntu MATE 32-bit and ROS Build
+
+This is a brief outline of the 4 steps you will be taking to build a full working ROV image.
+
+Install Ubuntu MATE 32 bit image on flash  (PC)
+Complete Ubuntu MATE configuration (Raspberry Pi 3B+/Screen/Keyboard)
+Install ROS Kinetic (Raspberry Pi 3B+/Screen/Keyboard)
+Verify image on ROV
+
+Download the following image for the core OS build process: Ubuntu Mate 18.04.02 for Raspberry Pi
+
+https://releases.ubuntu-mate.org/archived/bionic/armhf/ubuntu-18.04.2-beta2-desktop-armhf+raspi-ext4.img.xz
+
+NOTE on 32 bit image
+
+armhf = hardware floating point instructions + 32-bit instruction set. 64-bit ARM supports hardware floating point and NEON
+
+
+All archived images can be found at the following location
+https://releases.ubuntu-mate.org/archived/bionic/armhf/

@@ -13,7 +13,7 @@
   * Packages, Programs, Topics, Nodes, Variables, etc should follow clearly outlined naming conventions. This will minimize stupid mistakes when different people work on the same code.
 * ## Make ROS Easy
   * Fewer topics, more data. Whenever possible, keep things within one topic, and use a custom message type to send multiple pieces of information.
-  * New topics should only be created when it is necessary to publish at a different rate. For example, a separate topic would be used for tools and thruster data.
+  * New topics should only be created when it is necessary to publish at a different rate. For example, a separate topic would be used for sensors and thruster data.
   * Transition towards the use of services more than topics. It is probably better to use services for things like button presses in order to reduce topic clutter and have more straightforward code.
 * ## Make Environments Easy
   * Environments should always be as standardized and up to date as possible. This means Ubuntu 22, Python3, ROS 2, etc. 

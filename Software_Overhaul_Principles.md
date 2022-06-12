@@ -15,7 +15,7 @@
   * Fewer topics, more data. For example: Instead of creating multiple topics for tool toggling, create one topic and custom message, and send each tool's status as a boolean in that custom message.
   * New topics should only be created when it is necessary to publish at a different rate. For example, a separate topic would be used for tools and thruster data.
 * ## Make Environments Easy
-  * Environments should always be as up to date as possible. This means Ubuntu 22, Python3, ROS 2, etc. 
+  * Environments should always be as standardized and up to date as possible. This means Ubuntu 22, Python3, ROS 2, etc. 
   * WHenever possible, avoid configuring environments. Leave them as the default. This will make developing remotely and documentation much easier.
 * ## Make Readability Easy
   * You don't have to write comments for every line of your code, but you should generally provide one or two lines at the beginning of each function.

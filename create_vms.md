@@ -64,7 +64,7 @@ Created by James Randall
     14. Select Don’t Upgrade if prompted to upgrade Ubuntu Version
     15. If prompted, accept the software updates
     16. Shut down the VM
-    17.Repeat for both Topside and Bottomside
+    17. Repeat for both Topside and Bottomside
 
 5. In VirtualBox, for both Topside and Bottomside:
     1. Select the VM and navigate to Settings in the top left of the right pane

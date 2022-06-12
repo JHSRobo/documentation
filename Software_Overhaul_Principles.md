@@ -20,3 +20,14 @@
 * ## Make Readability Easy
   * You don't have to write comments for every line of your code, but you should generally provide one or two lines at the beginning of each function.
   * At the beginning of each program, write a brief paragraph about how it works. This goes a long way.
+* ## Make Projects Easy
+  * When you aren't doing anything, check the Software Overhaul project. There will always be stuff for you to do.
+  * When you have a new idea, add it to the planning section of the project. If something's status has changed, move it. You, specficially, reading this, can move it.
+* ## Make Documentation Easy
+  * From now on, consolidate all documentation in this repository on Github.
+  * It is better to minimize the amount of documentation required than to have great documentation. If you can make a process simpler, do it.
+  * The things that need documentation are going to be things like environment configuration. Remember all weird libraries installed and all weird settings changed.
+* ## Make Training Easy
+  * The difficult part about training new kids is not teaching them to read your code, it is teaching them how our software architecture works and where all our nebulous config files and libraries are. Keep this as straightforward as possible to avoid the situation we have found ourselves in.
+
+### Alex Bertran, Nathan Peterson, James Randall, Adon Sharp, 2022

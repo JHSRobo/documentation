@@ -39,6 +39,7 @@
 * ## Forwards Sustainability
   * We want new members to be able to read our code easily, which means not forcing them to learn C++ to understand old code.
   * We should actually walk the walk in regards to standardization, and not have our code be a mess fragmented between 2 different languages.
+  * Our current infrastructure is essentially a test that never ended. In the description of the ROVMIND repository, it is described as a test that will expire at the beginning of the 2018 season.
 * ## Better Understanding
   * There is a lot of old esoteric code that we don't understand. By writing it ourselves, we will be familiar with it.
   * Hopefully, this will allow future team members to understand more easily as well.

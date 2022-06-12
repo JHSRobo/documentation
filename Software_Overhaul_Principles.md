@@ -11,9 +11,10 @@
   * Push **everything** to Github, even code that is in development. Just make sure to push to an in development branch.
 * ## Make Names Easy
   * Packages, Programs, Topics, Nodes, Variables, etc should follow clearly outlined naming conventions. This will minimize stupid mistakes when different people work on the same code.
-* ## Make Topics Easy
-  * Fewer topics, more data. For example: Instead of creating multiple topics for tool toggling, create one topic and custom message, and send each tool's status as a boolean in that custom message.
+* ## Make ROS Easy
+  * Fewer topics, more data. Whenever possible, keep things within one topic, and use a custom message type to send multiple pieces of information.
   * New topics should only be created when it is necessary to publish at a different rate. For example, a separate topic would be used for tools and thruster data.
+  * Transition towards the use of services more than topics. It is probably better to use services for things like button presses in order to reduce topic clutter and have more straightforward code.
 * ## Make Environments Easy
   * Environments should always be as standardized and up to date as possible. This means Ubuntu 22, Python3, ROS 2, etc. 
   * WHenever possible, avoid configuring environments. Leave them as the default. This will make developing remotely and documentation much easier.

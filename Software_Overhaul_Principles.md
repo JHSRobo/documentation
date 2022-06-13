@@ -31,22 +31,5 @@
 * ## Make Training Easy
   * The difficult part about training new kids is not teaching them to read your code, it is teaching them how our software architecture works and where all our nebulous config files and libraries are. Keep this as straightforward as possible to avoid the situation we have found ourselves in.
 
-# Why Are We Doing This?
-* ## The Approach of EOL Status
-  * ROS1 Melodic (Our current version) hits End of Life status in May of next year, right before competition. 
-  * Ubuntu 18 is nearing End of Life, and ROS1 Melodic is not supported on newer versions.
-  * Python2 has been End of Life for a long time
-* ## Forwards Sustainability
-  * We want new members to be able to read our code easily, which means not forcing them to learn C++ to understand old code.
-  * We should actually walk the walk in regards to standardization, and not have our code be a mess fragmented between 2 different languages.
-  * Our current infrastructure is essentially a test that never ended. In the description of the ROVMIND repository, it is described as a test that will expire at the beginning of the 2018 season.
-* ## Better Understanding
-  * There is a lot of old esoteric code that we don't understand. By writing it ourselves, we will be familiar with it.
-  * Hopefully, this will allow future team members to understand more easily as well.
-* ## Cleanup
-  * We have 10 years of old code in our ROS1 architecture. We have like 3 different iterations of depth hold, and a bunch of empty topics that no longer see any use, but are still depended on by the rest of the architecture.
-  * Our code is a mess. Different generations of coders have all named variables, topics, nodes, etc in their own styles, and cleaning this up while keeping the current architecture would be a massive undertaking on its own while only delaying the inevitable switch to ROS2.
-* ## Cooler Code
-  * We wanna use Python3! We want access to cool libraries like CirtcuitPython so we can interface easily with the new cool HAT! We wanna be able to use new libraries that aren't supported on Python2 without having to make jenky workarounds!
 ______________
 ### Alex Bertran, Nathan Peterson, James Randall, Adon Sharp, 2022

@@ -113,3 +113,61 @@ All archived images can be found at the following location
 https://releases.ubuntu-mate.org/archived/bionic/armhf/
 
 ![First_archive_library](pictures/First_archive_library.PNG)
+
+![download_flash_screen_one](pictures/download_flash_screen_one.PNG)
+
+![flash_screen_two](pictures/flash_screen_two.PNG)
+
+![flash_screen_three](pictures/flash_screen_two.PNG)
+
+ -Great job, let move on the the next step
+
+   1. Navigate to the “Boot” drive on the SD card. Create a file called ssh (no extension).
+     
+     a. For example, create ssh.txt – and then remove the .txt extension. The file should be empty.
+      
+      i. If doing this in Windows, you will have to enable viewing of file extensions.
+  
+  ![file_one](pictures/file_one.PNG)
+  
+  2. Insert SD card into Raspberry Pi 3B+ in order to complete the OS installation process
+
+   3. Go through install procedure
+     
+     a. LA time zone
+    
+     b. Username: jhsrobo
+     
+     c. Password: JHSRobo
+     
+     d. Login automatically
+
+![ubuntu_screen_one](pictures/ubuntu_screen_one.PNG)
+
+![ubuntu_screen_two](pictures/ubuntu_screen_two.PNG)
+
+![ubuntu_screen_three](pictures/ubuntu_screen_three.PNG)
+
+![ubuntu_screen_four](pictures/ubuntu_screen_four.PNG)
+
+   1. Open the terminal
+
+   2. Enter: `sudo apt update`
+
+   3. Enter: `sudo apt install openssh-server`
+
+   4. Once you are in the terminal type: `sudo raspi-config`
+
+   5. Enter the password (JHSRobo) 
+
+      a. Use arrow keys to select “interfacing options” < Enter >
+
+![ubuntu_screen_five](pictures/ubuntu_screen_five.PNG)
+
+![ubuntu_screen_six](pictures/ubuntu_screen_six.PNG)
+
+
+   3. Enter: `sudo ufw allow 22`
+
+   4. Set up the SSH keys for the host
+

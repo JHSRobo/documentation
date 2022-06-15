@@ -95,19 +95,21 @@
 
 This is a brief outline of the 4 steps you will be taking to build a full working ROV image.
 
-Install Ubuntu MATE 32 bit image on flash  (PC)
-Complete Ubuntu MATE configuration (Raspberry Pi 3B+/Screen/Keyboard)
-Install ROS Kinetic (Raspberry Pi 3B+/Screen/Keyboard)
-Verify image on ROV
+   1) Install Ubuntu MATE 32 bit image on flash  (PC)
+   2) Complete Ubuntu MATE configuration (Raspberry Pi 3B+/Screen/Keyboard)
+   3) Install ROS Kinetic (Raspberry Pi 3B+/Screen/Keyboard)
+   4) Verify image on ROV
 
-Download the following image for the core OS build process: Ubuntu Mate 18.04.02 for Raspberry Pi
+   1. Download the following image for the core OS build process: Ubuntu Mate 18.04.02 for Raspberry Pi
 
 https://releases.ubuntu-mate.org/archived/bionic/armhf/ubuntu-18.04.2-beta2-desktop-armhf+raspi-ext4.img.xz
 
-NOTE on 32 bit image
-
-armhf = hardware floating point instructions + 32-bit instruction set. 64-bit ARM supports hardware floating point and NEON
+|NOTE on 32 bit image|
+|-----------------------------------------------------------------------------------------------------------------------------|
+|armhf = hardware floating point instructions + 32-bit instruction set. 64-bit ARM supports hardware floating point and NEON |
 
 
 All archived images can be found at the following location
 https://releases.ubuntu-mate.org/archived/bionic/armhf/
+
+![First_archive_library](pictures/First_archive_library.PNG)

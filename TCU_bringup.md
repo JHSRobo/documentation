@@ -171,3 +171,183 @@ https://releases.ubuntu-mate.org/archived/bionic/armhf/
 
    4. Set up the SSH keys for the host
 
+
+
+   |jhsrobo@jhsrobo-rov:/etc/ssh$ sudo ssh-keygen -t rsa -b 4096 -f /etc/ssh/ssh_host_rsa_key|
+|-|
+  | Generating public/private rsa key pair.|
+|-|
+  | Enter passphrase (empty for no passphrase):|
+|-|
+   |Enter same passphrase again:|
+ |-|  
+  | Your identification has been saved in /etc/ssh/ssh_host_rsa_key.|
+|-|
+  | Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.|
+|-|
+ |  The key fingerprint is:|
+|-|
+   |SHA256:yvH0dRedRz8/Ec8GyoZFL/fG2rQzIeFOISawDKL47rQ root@jhsrobo-rov|
+|-|
+  | The key's randomart image is:|
+|-|
+|+---[RSA 4096]----+|
+|-|
+|   . . .   .o ...|
+|-|
+|. . . o o  + o +*|
+|-|
+|..     o ..o=oo=B|
+|-|
+| .        o.ooo+*|
+|-|
+|  .   . S   .+.oB|
+|-|
+| .   . = . .o..*+|
+|-|
+|  o   o . .  ..+.|
+|-|
+| o .            o|
+|-|
+|  E              |
+|-|
+|+----[SHA256]-----+|
+|-|
+|jhsrobo@jhsrobo-rov:/etc/ssh$|
+|-|
+|jhsrobo@jhsrobo-rov:/etc/ssh$ pwd|
+|-|
+|/etc/ssh|
+|-|
+|jhsrobo@jhsrobo-rov:/etc/ssh$ ls -a|
+|-|
+|.  ..  moduli  ssh_config  sshd_config  ssh_host_rsa_key  ssh_host_rsa_key.pub  ssh_import_id|
+|-|
+|jhsrobo@jhsrobo-rov:/etc/ssh$ JHSR|
+
+|jhsrobo@jhsrobo-rov:~/Desktop$ ip a|
+|-|
+|1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000|
+|-|
+|link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00|
+|-|
+|inet 127.0.0.1/8 scope host lo|
+|-|
+|valid_lft forever preferred_lft forever|
+|-|
+|inet6 ::1/128 scope host|
+|-|
+|valid_lft forever preferred_lft forever|
+|-|
+|2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000|
+|-|
+|link/ether b8:27:eb:0a:39:7d brd ff:ff:ff:ff:ff:ff|
+|-|
+|inet 192.168.1.140/24 brd 192.168.1.255 scope global dynamic noprefixroute eth0|
+|-|
+|valid_lft 1995595332sec preferred_lft 1995595332sec|
+|-|
+|inet6 fe80::361:dce3:5216:8631/64 scope link noprefixroute|
+|-|
+|valid_lft forever preferred_lft forever|
+|-|
+|3: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000|
+|-|
+|link/ether b8:27:eb:5f:6c:28 brd ff:ff:ff:ff:ff:ff|
+
+   5. Shutdown, reboot,  and ssh in
+
+   6.You should now be able to SSH to the new device now.  Use the IP address you got from the last step doing the ‘ip a’ command.
+
+![PuTTY_config](pictures/PuTTY_config.PNG)
+
+|jhsrobo@jhsrobo-rov:~$ uname -a|
+|-|
+|Linux jhsrobo-rov 4.15.0-1032-raspi2 #34-Ubuntu SMP PREEMPT Wed Feb 6 11:50:42 UTC 2019 armv7l armv7l          armv7l GNU/Linux|
+|-|
+|jhsrobo@jhsrobo-rov:~$ cat /etc/lsb-release|
+|-|
+|DISTRIB_ID=Ubuntu|
+|-|
+|DISTRIB_RELEASE=18.04|
+|-|
+|DISTRIB_CODENAME=bionic|
+|-|
+|DISTRIB_DESCRIPTION="Ubuntu 18.04.2 LTS"|
+|-|
+|jhsrobo@jhsrobo-rov:~$|
+
+## Time to install ROS Kinetic
+
+   1. We will reference the following document for installation of ROS Kinetic on the ROV Ubuntu MATE OS.
+   ROS Kinetic Install Instructions.pdf
+      
+      a.First link
+
+     b. Follow instructions
+     
+   c. Install desktop full version
+
+
+
+
+   2. Enter into a terminal: `cd /etc/udev/rules.d`
+
+   3. `sudo touch 60-extra-acl.rules`
+
+   4. `sudo nano 60-extra-acl.rules`
+
+      a. Type: `KERNEL=="ttyUSB[0-9]*", TAG+="udev-acl", TAG+="uaccess"`
+   
+   5. Leave the window with ctrl+x and enter: `sudo nano /etc/hosts`
+   
+   6. Insert
+      
+      a. `192.168.1.100 master`
+      
+      b. `192.168.1.111 bottomside`
+  
+  7. `cd`
+
+   8. Enter: `sudo nano .bashrc`
+
+      a. Type: `Export ROS_MASTER_URI=http://master:11311`
+
+      b. Directly under type: `Export ROS_HOSTNAME=bottomside`
+
+      c. Under that type: `Export ROS_IP=192.168.1.111`
+
+   9. Create Swap File
+
+      a. Enter: `sudo swapoff -a`
+
+      b. `sudo dd if=/dev/zero of=/swapfile bs=1M count=8000 status=progress`
+
+      c. `sudo chmod 600 /swapfile`
+
+      d. `sudo mkswap /swapfile`
+
+      e. `sudo swapon /swapfile`
+
+
+
+
+   10. Make new folder named `github`
+
+      a. Enter folder
+      
+      b. Type: `git clone https://github.com/JHSRobo/releasepage`
+
+      c. Enter releasepage folder
+      
+      d. Type: `rov_build.sh`
+
+   11. For depth sensor:
+      
+      a. Type: `sudo apt-get install python-smbus`
+      
+      b. `sudo raspi-config`
+
+      c. Choose interface-options and enable I2C
+
+

@@ -16,7 +16,7 @@
   * New topics should only be created when it is necessary to publish at a different rate. For example, a separate topic would be used for sensors and thruster data.
   * Transition towards the use of services more than topics. It is probably better to use services for things like button presses in order to reduce topic clutter and have more straightforward code.
 * ## Make Environments Easy
-  * Environments should always be as standardized and up to date as possible. This means Ubuntu 22, Python3, ROS 2, etc. 
+  * Environments should always be as standardized and up to date as possible. This means Ubuntu 20, Python3, ROS Noetic +, etc. 
   * WHenever possible, avoid configuring environments. Leave them as the default. This will make developing remotely and documentation much easier.
 * ## Make Readability Easy
   * You don't have to write comments for every line of your code, but you should generally provide one or two lines at the beginning of each function.
@@ -30,6 +30,7 @@
   * The things that need documentation are going to be things like environment configuration. Remember all weird libraries installed and all weird settings changed.
 * ## Make Training Easy
   * The difficult part about training new kids is not teaching them to read your code, it is teaching them how our software architecture works and where all our nebulous config files and libraries are. Keep this as straightforward as possible to avoid the situation we have found ourselves in.
+  * Every time code is updated or written, make a flowchart, add it to the repo, and list it in the .gitignore file.
 
 ______________
 ### Alex Bertran, Nathan Peterson, James Randall, Adon Sharp, 2022

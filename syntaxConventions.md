@@ -15,6 +15,7 @@ The following is a set of guidelines for how to name things in your code. It cov
   * Log each major step in your program to this log file. This doesn't have to be anything complex.
   * Log whenever a button is pressed or something is activated as well.
 * Avoid creating new topics wherever possible. Instead, use existing topics and custom message types to send more data.
+* Use more dictionaries! We do not want to see repetitive variables.
 
 ## Naming Things
 * **Variables:** Keep variable names short, but don't ever settle for one letter. It should always be clear what the variable represents. 

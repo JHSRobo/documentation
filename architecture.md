@@ -18,6 +18,7 @@ In addition,  **launch_files** is a package on both topside and bottomside. It h
 ### File Structure
 The **ROVMIND** repository is cloned in the home directory. Within ROVMIND, there are scripts (see deployment.md) and the **ros_workspace** directory. **ros_workspace** has several folders, but you rarely need to worry about anything other than **src**. src contains all of our packages. The TCU src file is shown below.
 ![File Tree example on TCU](https://github.com/JHSRobo/documentation/blob/main/pictures/tcuFiletree.png "I have transparent windows on my pc so you can see my wallpaper stripes lol")
+
 Each package has its own repository on GitHub, and they're cloned into **src** by scripts in **ROVMIND**
 Within each package, there are several important folders and files, and you can read more about what each of those are in implementing_code.md.
 ### Network

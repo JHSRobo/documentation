@@ -30,4 +30,4 @@ Inside the TCU, there is a router. It's not connected to the internet, but it gi
 
 This lets different machines communicate with each other. All data transfer is done over ethernet, and the router acts as a central hub.
 ### Cameras
-With the exception of the **cameras** package on topside, our vision system runs outside of ROS. Each camera has a Raspberry Pi Zero inside. The Pi runs a script contained within the **cameras** package that streams video to an IP. The viewer program on Topside listens to these IPs and displays them to the pilot.
+With the exception of the **camera_view** package on topside, our vision system runs outside of ROS. Each camera has a Raspberry Pi Zero inside. The Pi runs a script contained within the **camera_stream** package that streams video to an IP. The viewer program on Topside listens to these IPs and displays them to the pilot. For more information about how this works, check out the readme for camera_viewer.

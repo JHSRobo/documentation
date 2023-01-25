@@ -62,7 +62,7 @@ If you are following the above steps in a virtual machine, there are other steps
 2. Go to Network, and configure Adapter 1 to be a Bridged adapter attached to your Wi-Fi device. Then, configure Adapter 2 to be a Bridged adapter attached to your Ethernet device.
 	* This will allow you to connect to a Rovotics Router
 ### Cameras
-1. Flash a micro-SD card using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) with **Raspbian Bullseye Lite**.
+1. Flash a micro-SD card using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) with **Raspbian Bullseye Lite** (32-bit).
 	* Click the settings icon and adjust the settings
 	* Create a user with username jhsrobo and password JHSRobo
 	* Enable SSH with Password Authentication

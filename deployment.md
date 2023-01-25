@@ -61,6 +61,10 @@ If you are following the above steps in a virtual machine, there are other steps
 	* Display -> Video Memory: 128 MB
 2. Go to Network, and configure Adapter 1 to be a Bridged adapter attached to your Wi-Fi device. Then, configure Adapter 2 to be a Bridged adapter attached to your Ethernet device.
 	* This will allow you to connect to a Rovotics Router
+3. Once you are inside Ubuntu, make the following changes:
+	* Navigate to Network settings, edit your network connection, and set your IP address to be manually assigned to 192.168.1.100
+	* Mount the VBoxGuestAdditions iso file that came in the directory where you installed virtualbox inside your Ubuntu environment.
+		* This will enable clipboard sharing and window resizing.
 ### Cameras
 1. Flash a micro-SD card using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) with **Raspbian Bullseye Lite** (32-bit).
 	* Click the settings icon and adjust the settings

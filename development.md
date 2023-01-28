@@ -1,5 +1,5 @@
-﻿
-# Deployment
+﻿﻿
+# Development
 ### Important ROVOTICS Software Practices
 * Avoid writing while loops. Almost any time you need something to run on repeat, you can tie it in to a topic callback.
 * Don't use the `sleep()` method in code that interfaces with ROS. It causes issues. Instead, use the built in ROS function.
@@ -27,3 +27,4 @@
 	* `package.xml`: This lists all of the packages your program will need. If you import something, list it in here. Directions for how to do that can be found inside the file itself. To know what to list for your package, check out the `python.yaml` and `base.yaml` files on the rosdistro repository on ROS's Github. It contains lists of packages that rosdep (see using_software.md) will install when it is called. This is like a `requirements.txt` but on the package level. 
 	* `CMakeLists.txt`: Here, you will need to list the names of any custom message files that you generate, or .cfg files that you use, or services you want to create. This file is checked by `catkin_make`, and everything listed is compiled.
 	* **launch_files**: This is one of our repositories, and it contains the **launchfiles** that we use to initiate topside and bottomside. When you are implementing a new package, you will need to list your program in either **topside.launch** or **bottomside.launch** in this repository. 
+

@@ -1,4 +1,4 @@
-﻿# Using ROS
+﻿# Using Software
 This file contains instructions for launching our software, and some important ROS commands that you will find useful. You will want to read architecture.md before reading this document.
 ### Launching ROS
 We have aliases listed in ~/.bashrc for starting ROS on topside and bottomside. Pretty much everything is done in a **CLI** (Command Line Interface).
@@ -22,4 +22,5 @@ We recommend that you read ros_structure.md before reading this part. This docum
   * `rosrun` lets you run a node in your ROS instance
   * `roslaunch` lets you start your ROS instance from a launch file
   * `rosdep install --from-paths src --ignore-src -r -y` installs all dependencies listed in package.xml in your system packages.
+
 

@@ -1,6 +1,6 @@
 ﻿# Architecture
 We recommend you read ros_structure.md before this section.
-Rovotics' Architecture is called ROVMIND. It was created by Michael Equi was re-released by James Randall.
+Rovotics' Architecture is called ROVMIND. It was created by Michael Equi and was re-released by James Randall.
 
 There are two sides of ROVMIND. **Topside**, which runs on the TCU above the water, and **Bottomside**, which runs on the ROV beneath the water.
 Each side runs an instance of **ROS**.
@@ -31,3 +31,4 @@ Inside the TCU, there is a router. It's not connected to the internet, but it gi
 This lets different machines communicate with each other. All data transfer is done over ethernet, and the router acts as a central hub.
 ### Cameras
 With the exception of the **camera_view** package on topside, our vision system runs outside of ROS. Each camera has a Raspberry Pi Zero inside. The Pi runs a script contained within the **camera_stream** package that streams video to an IP. The viewer program on Topside listens to these IPs and displays them to the pilot. For more information about how this works, check out the readme for camera_viewer.
+

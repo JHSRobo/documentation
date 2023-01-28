@@ -85,3 +85,4 @@ If you are following the above steps in a virtual machine, there are other steps
 	* `git clone https://github.com/JHSrobo/camera_stream`
 	* `sudo bash ~/camera_stream/stream.sh`
 You will be disconnected from the RPi, and you will get a video feed when you run topside.
+

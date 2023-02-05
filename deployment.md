@@ -81,6 +81,7 @@ If you are following the above steps in a virtual machine, there are other steps
     * You may need to change your default gateway. Do this with `ip route add default via gateway dev wlan0 onlink`, where `gateway` is replaced with your network's default gateway.
 	    * Please note that this command is temporary and only changes your IP for around 10 minutes, but this is plenty of time for the steps that come.
 4. Run the following commands:
+	* `sudo apt update`
 	* `sudo apt install git`
 	* `git clone https://github.com/JHSrobo/camera_stream`
 	* `sudo bash ~/camera_stream/stream.sh`

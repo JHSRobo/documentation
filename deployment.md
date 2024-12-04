@@ -30,19 +30,19 @@ Please read architecture.md and using_software.md first.
 	* Enable the locale settings
 2. Install the SD card into an RPi. Finish installation if prompted.
 3. If you are able to access a router, simply connect the Raspberry Pi to the Router over Ethernet
-3. If you are unabled to access a router, enable internet on the Raspberry Pi
+4. If you are unabled to access a router, enable internet on the Raspberry Pi
 	* Directions will vary from network to network.
 	* If you choose to connect to wifi, run `ip link set wlan0 up`
 		* Edit `/etc/netplan/50-cloud-init.yaml` to match your network preferences. You can see an example [here](https://github.com/JHSRobo/documentation/blob/main/example_netplan)
 			* You will need to change the network name, password, and default gateway.
 		* Run `sudo netplan apply`. (It might hang, in that case just reboot.)
-4. Run these commands:
+5. Run these commands:
 	* `sudo apt install git`
 	* `git clone https://github.com/JHSRobo/corews`
 	* `sudo bash ~/corews/rov_setup.bash`
 		* This will take a bit
 	* `source ~/.bashrc`
-5. On a separate device, connect to the router and visit the router page: [192.168.1.1](192.168.1.1)
+6. On a separate device, connect to the router and visit the router page: [192.168.1.1](192.168.1.1)
 	* Username: Admin | Password: JHSRobo
 	* Navigate to IP > DHCP Server > Leases
 		* Example image shown below setup steps
@@ -52,7 +52,7 @@ Please read architecture.md and using_software.md first.
 	* Set the ROV's IP to 192.168.1.111
 
 The router page should look similar to this:
-![Router Page Example](https://github.com/JHSRobo/documentation/blob/main/pictures/routerScreengrab.png "Don't mind the forced dark mode lmao")
+![Router Page Example](https://github.com/JHSRobo/documentation/blob/main/pictures/routerScreenGrab.png "Don't mind the forced dark mode lmao")
 
 ### Cameras
 1. Flash a micro-SD card using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) with **Raspbian Bookworm Lite** (32-bit).

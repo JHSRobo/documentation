@@ -8,19 +8,18 @@ Running our full ROS system will require multiple terminal windows or tabs. Beca
 > SSH lets you remotely access the CLI of another computer connected to the same network by IP.
 ### Accessing Cameras
 
-To launch ROS on topside, type `topside`. To launch ROS on bottomside, (once you `ssh` into bottomside) type `bottomside`. `topside` and `bottomside` are custom commands that we've specified in **~/.bashrc**.
-> .bashrc is a bash file that runs every time you open a new terminal window. We use it to write shortcuts, configure settings,  and automate things.
+To launch ROS on topside, type `topside`. To launch ROS on bottomside, (once you `ssh` into bottomside) type `bottomside`. `topside` and `bottomside` are custom commands that we've specified in **~/.bashrc**. In reality, the commands are running the files topside.yaml and bottomside.ymal respectively.
+> .bashrc is a bash file that runs every time you open a new terminal window. We use it to write shortcuts, configure settings, and automate things.
 
 > In linux, ~ siginifies the home directory and . before the name of a file means that it is hidden.
 ### Useful Commands
 We recommend that you read ros_structure.md before reading this part. This document does not contain instructions on how to use each command, just a list of commands it is helpful to know of.
-  * `rostopic list` lists all running topics in your ROS instance
-  * `rostopic echo` allows you to view what is being published to a topic
-  * `rostopic pub` lets you publish a value to a topic from command line
-  * `rosnode list` lists all running nodes in your ROS instance
-  * `rosnode kill` ends a program running in your ROS instance
-  * `rosrun` lets you run a node in your ROS instance
-  * `roslaunch` lets you start your ROS instance from a launch file
+  * `ros2 topic list` lists all running topics in your ROS instance
+  * `ros2 topic echo` allows you to view what is being published to a topic
+  * `ros2 topic pub` lets you publish a value to a topic from command line
+  * `ros2 node list` lists all running nodes in your ROS instance
+  * `ros2 run` lets you run a node in your ROS instance
+  * `ros2 launch` lets you start your ROS instance from a launch file
   * `rosdep install --from-paths src --ignore-src -r -y` installs all dependencies listed in package.xml in your system packages.
 
 
